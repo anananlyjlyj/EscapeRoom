@@ -1,0 +1,350 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="robots" content="noindex">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        map.lessons area {
+            background: black;
+
+        }
+    </style>
+
+    <title>Lab Escape</title>
+</head>
+
+<body>
+
+
+
+  <div id="navbar">
+    <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
+    <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
+      
+  Lilos Büro: ein Rollkontainer
+
+    </span>
+
+    
+    <div class="title clock w3-panel w3-leftbar w3-border-red w3-pale-red px-auto" style="float:right;
+    "><span class="clock" id="clock"></span></div>
+    
+    
+    <a button class="experiments mx-3 py-2 btn experiment-popover"
+    style="float:right; font-size: 20px;" tabindex="0" data-placement="left" data-toggle="popover">
+        <div class="w3-quarter magnet"> <img src="assets/img/icon_magnet.png" style="width:45px"> </div>
+        <div class="w3-quarter electricity"> <img src="assets/img/icon_electricity.png" style="width:45px"> </div>
+        <div class="w3-quarter vacuum"> <img src="assets/img/icon_vacuum.png" style="width:45px"> </div>
+        <div class="w3-quarter optics"> <img src="assets/img/icon_optics.png" style="width:45px"> </div>
+    </a>
+    
+
+  </div>
+
+  <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 20;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+    <div class="container-fluid"  style="">
+
+        <div class="w3-row  w3-stretch">
+
+          
+            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+
+                <div class="mb-3">
+                  <a button tabindex="0"  class="title w3-panel w3-topbar
+                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                      data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
+                </div>
+                
+                <div class="inventory">
+                    <div class="torch"> <img src="assets/img/inventory/torch.png"> </div>
+                    <div class="scissors"> <img src="assets/img/inventory/scissors.png"> </div>
+                    <div class="tape"> <img src="assets/img/inventory/tape.png"> </div>
+                    <div class="magnet"> <img src="assets/img/inventory/magnet.png"> </div>
+                    <div class="box_magnet"> <img src="assets/img/inventory/box_magnet.png"> </div>
+                    <div class="box_electricity"> <img src="assets/img/inventory/box_electricity.png"> </div>
+                    <div class="cd"> <img src="assets/img/inventory/cd.png"> </div>
+                    <div class="apple"> <img src="assets/img/inventory/apple.png"> </div>
+                </div>
+                
+
+                
+
+                
+            
+
+                
+                <div class="mt-2">
+                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
+                        starten</a>
+                </div>
+                
+            </div>
+
+            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+                <div style="">
+                  
+                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                    
+Hier steht ein Rollcontainer. Darin befindet sich eine Menge Zeug...
+
+                    <br/>
+                  
+                  </section>
+                </div>
+
+                <div class="w3-panel">
+                  
+                  
+                    
+<section>
+  <img src="assets/img/office_container.jpg" alt="usemap" usemap="#lessons" id="cabinet">
+  <map name="lessons" class="lessons">
+    <area data-lesson="drawer1" alt="Eine Schublade" title="Eine Schublade" href=""
+      coords="111,539,143,693,1256,573,1268,453" shape="poly">
+    <area data-lesson="drawer2" alt="Eine Schublade" title="Eine Schublade" href=""
+      coords="153,721,217,1107,1196,911,1252,584" shape="poly">
+    <area data-lesson="drawer3" alt="Eine Schublade" title="Eine Schublade" href=""
+      coords="217,1127,274,1417,1138,1190,1182,937" shape="poly">
+    <area data-lesson="drawer4" alt="Eine Schublade" title="Eine Schublade" href=""
+      coords="281,1443,317,1659,1100,1425,1143,1211" shape="poly">
+  </map>
+</section>
+
+                </div>
+
+                <div class="w3-panel" style="max-width: 1320px; ">
+
+                  
+
+                  <section >
+                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                  
+Vielleicht könnte Einiges davon später im Labor nützlich sein!
+<br />
+Klicke auf die Schublade um sie zu öffnen.
+
+                  </section>
+
+
+                  
+                  
+                  <a button  class="title w3-btn w3-gray w3-round-large " href="office.html" style="float: right; margin-top: 5%;">
+                  Zurück ins Büro
+                  
+                  
+
+                  
+                  </a>
+                  </section>
+                  
+                </div>
+            </main>
+        </div>
+    </div>
+    
+<div class="modal fade" id="modal-drawer1" tabindex="-1" role="dialog" aria-labelledby="modal-drawer1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-drawer1Label" data-dismiss="modal" style="font-size:32px;">Eine Schublade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_container_1.jpg" alt="Büromaterial" />
+  <br /><br />
+  Vielleicht nimmt Ihr besser Schere und Klebeband mit...
+  <br /><br />
+</div>
+<div class="modal-footer">
+  <button type="button" class="w3-btn w3-gray w3-round-large find-material" data-dismiss="modal">Schere und Tesa ins Inventar legen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-drawer2" tabindex="-1" role="dialog" aria-labelledby="modal-drawer2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-drawer2Label" data-dismiss="modal" style="font-size:32px;">Eine Schublade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  Diese Schublade ist verschlossen.
+</div>
+<div class="modal-footer">
+  <button type="button" class="w3-btn w3-gray w3-round-large" data-dismiss="modal">Weiter</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-drawer3" tabindex="-1" role="dialog" aria-labelledby="modal-drawer3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-drawer3Label" data-dismiss="modal" style="font-size:32px;">Eine Schublade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  Diese Schublade ist verschlossen.
+</div>
+<div class="modal-footer">
+  <button type="button" class="w3-btn w3-gray w3-round-large" data-dismiss="modal">Weiter</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-drawer4" tabindex="-1" role="dialog" aria-labelledby="modal-drawer4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-drawer4Label" data-dismiss="modal" style="font-size:32px;">Eine Box</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_container_2.jpg" alt="Büromaterial" />
+  <br /><br />
+  Oh, ein Magnet und eine Box mit Eisenspänen! Die könnt Ihr bestimmt gebrauchen. Nimm sie mit ins Labor!
+  <br /><br />
+</div>
+<div class="modal-footer">
+  <button type="button" class="w3-btn w3-gray w3-round-large find-magnet" data-dismiss="modal"> Den Magneten und die Box
+    ins Inventar legen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jslib/jquery.imagemapster.min.js"></script>
+    <script type="text/javascript" src="jslib/scripts.js"></script>
+    
+    <script type="text/javascript">
+      $(function () {
+          $('.experiment-popover').popover({
+              container: 'body',
+              html: true,
+              trigger: 'focus',
+              title: "",
+              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+          })
+      })
+    </script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.inventory-popover').popover({
+                container: 'body',
+                html: true,
+                trigger: 'focus',
+                content:'Auf der linker Seite sammelt Ihr Dinge, die Ihr noch brauchen wird.'
+            })
+        })
+    </script>
+    
+    
+<script type="text/javascript">
+  GameState.restore();
+  GameInterface.setup(GameState);
+  $().ready(function () {
+    //'use strict';
+
+    var img = $('#cabinet');
+    img.mapster({
+      stroke: true,
+      mapKey: "data-lesson",
+      clickNavigate: true,
+      render_highlight: {
+        strokeWidth: 4,
+        fillColor: '555555',
+        stroke: true
+      },
+      render_select: {
+        fillColor: 'd6d6d6',
+        fillOpacity: 0,
+        stroke: true,
+        strokeType : "dashed",
+        strokeWidth: 1,
+        strokeOpacity: 0.8
+      },
+      onClick: function (e) {
+        if (e.key.startsWith('drawer')) {
+          $('#modal-' + e.key).modal({ show: true });
+        }
+        return false;
+      },
+      areas: [
+        { key: 'drawer1', staticState: true },
+        { key: 'drawer2', staticState: true },
+        { key: 'drawer3', staticState: true },
+        { key: 'drawer4', staticState: true }
+      ]
+    });
+    $('.find-material').click(function () {
+      GameState.find('scissors');
+      GameState.find('tape');
+      GameInterface.updateInventory(GameState);
+      return true;
+    });
+    $('.find-magnet').click(function () {
+      GameState.find('magnet');
+      GameState.find('box_magnet');
+      GameInterface.updateInventory(GameState);
+      return true;
+    });
+  });
+</script>
+
+</body>
+
+</html>

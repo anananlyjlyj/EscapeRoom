@@ -1,0 +1,454 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="robots" content="noindex">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        map.lessons area {
+            background: black;
+
+        }
+    </style>
+
+    <title>Lab Escape</title>
+</head>
+
+<body>
+
+
+
+  <div id="navbar">
+    <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
+    <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
+      
+  Lilos Labor
+
+    </span>
+
+    
+    <div class="title clock w3-panel w3-leftbar w3-border-red w3-pale-red px-auto" style="float:right;
+    "><span class="clock" id="clock"></span></div>
+    
+    
+    <a button class="experiments mx-3 py-2 btn experiment-popover"
+    style="float:right; font-size: 20px;" tabindex="0" data-placement="left" data-toggle="popover">
+        <div class="w3-quarter magnet"> <img src="assets/img/icon_magnet.png" style="width:45px"> </div>
+        <div class="w3-quarter electricity"> <img src="assets/img/icon_electricity.png" style="width:45px"> </div>
+        <div class="w3-quarter vacuum"> <img src="assets/img/icon_vacuum.png" style="width:45px"> </div>
+        <div class="w3-quarter optics"> <img src="assets/img/icon_optics.png" style="width:45px"> </div>
+    </a>
+    
+
+  </div>
+
+  <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 20;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+    <div class="container-fluid"  style="">
+
+        <div class="w3-row  w3-stretch">
+
+          
+            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+
+                <div class="mb-3">
+                  <a button tabindex="0"  class="title w3-panel w3-topbar
+                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                      data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
+                </div>
+                
+
+                
+
+                
+                <div class="" style="float:right;">
+                    <div class="torch"> <img src="assets/img/inventory/torch.png"> </div>
+                    <div class="scissors"> <img src="assets/img/inventory/scissors.png"> </div>
+                    <div class="tape"> <img src="assets/img/inventory/tape.png"> </div>
+                    <div class="magnet"> <img src="assets/img/inventory/magnet.png"> </div>
+                    <div class="box_magnet"> <img src="assets/img/inventory/box_magnet.png"> </div>
+                    <div class="box_electricity"> <img src="assets/img/inventory/box_electricity.png"> </div>
+                    <div class="cd"> <img src="assets/img/inventory/cd.png"> </div>
+                    <div class="apple"> <img src="assets/img/inventory/apple.png"> </div>
+                </div>
+                
+            
+
+                
+                <div class="mt-2">
+                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
+                        starten</a>
+                </div>
+                
+            </div>
+
+            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+                <div style="">
+                  
+                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                    
+Lilo scheint noch nicht zurück zu sein, das heißt Ihr müsst hier schon einmal ohne sie weitermachen.
+<br />
+ Auf den ersten Blick sieht das Labor vielleicht sehr unübersichtlich aus, aber hier hat nahezu jedes Teil
+ eine wichtige Funktion.
+
+                    <br/>
+                  
+                  </section>
+                </div>
+
+                <div class="w3-panel">
+                  
+                  
+                    
+<section>
+  <img src="assets/img/lab.jpg" alt="usemap" usemap="#lessons" id="lab">
+  <map name="lessons" class="lessons">
+    <area data-lesson="electricity" alt="Elektronik / Strom" title="Elektronik / Strom" href="lab_electricity.html"
+      coords="153,2,163,288,248,292,232,6" shape="poly">
+    <area data-lesson="vacuum" alt="Pumpe / Vakuum" title="Pumpe / Vakuum" href="lab_vacuum.html"
+      coords="510,121,511,12,637,9,636,124" shape="poly">
+    <area data-lesson="magnet" alt="Spule / Magnet" title="Spule / Magnet" href="lab_magnet.html"
+      coords="708,118,711,152,786,160,786,120" shape="poly">
+    <area data-lesson="optics" alt="Laser" title="Laser" href="lab_optics.html" coords="7,223,147,224,150,264,14,267"
+      shape="poly">
+    <area data-lesson="labbook" alt="Laborbuch" title="Laborbuch" href=""
+      coords="167,306,181,366,300,372,303,358,268,304,211,307" shape="poly">
+    <area data-lesson="drawer3" alt="Schublade 3" title="Schublade 3" href="" coords="57,526,59,568,195,596,196,552"
+      shape="poly">
+    <area data-lesson="drawer2" alt="Schublade 2" title="Schublade 2" href="" coords="433,576,673,561,681,609,434,623"
+      shape="poly">
+    <area data-lesson="drawer1" alt="Schublade 1" title="Schublade 1" href="" coords="427,525,674,501,674,557,427,575"
+      shape="poly">
+    <area data-lesson="snackbox" alt="Snackbox" title="Snackbox" href=""
+      coords="744,325,742,359,788,374,883,354,884,317,833,311" shape="poly">
+    <area data-lesson="bottle" alt="Flasche" title="Flasche" href="" coords="86,300,100,295,111,333,82,342,77,316"
+      shape="poly">
+    <area data-lesson="oven" alt="Ofen" title="Ofen" href="" coords="436,152,471,150,469,192,437,195" shape="poly">
+    <area data-lesson="table" alt="Ein komplizierter Aufbau" title="Ein komplizierter Aufbau" href=""
+      coords="328,201,584,205,584,260,333,254" shape="poly">
+  </map>
+</section>
+
+                </div>
+
+                <div class="w3-panel" style="max-width: 1320px; ">
+
+                  
+
+                  <section >
+                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                  
+Schaut Euch ein wenig um, sammelt weitere Hinweise und versucht Euch zu erinnern, was Lilo über das Experiment erzählt hat, bevor der
+Strom ausgefallen ist. <br />
+Bekommt Ihr noch zusammen, welche Komponenten für das Experiment wichtig sind, damit es
+läuft?
+
+                  </section>
+
+
+                  
+
+                  
+                  
+                  
+                  </a>
+                  </section>
+                  
+                </div>
+            </main>
+        </div>
+    </div>
+    
+<div class="modal fade" id="modal-table" tabindex="-1" role="dialog" aria-labelledby="modal-tableLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-tableLabel" data-dismiss="modal" style="font-size:32px;">Ein Lasertisch</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/lab_table.jpg" alt="Ein Lasertisch" />
+  <br /><br />Sieht nach ganz schön viel Arbeit aus, das alles aufzubauen!
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-drawer1" tabindex="-1" role="dialog" aria-labelledby="modal-drawer1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-drawer1Label" data-dismiss="modal" style="font-size:32px;">Eine Schublade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/lab_drawer1.jpg" alt="Eine Schublade" />
+  <br /><br />Was ist das denn? Ich wüsste nicht, wofür ich den Kram gebrauchen könnte.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-drawer2" tabindex="-1" role="dialog" aria-labelledby="modal-drawer2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-drawer2Label" data-dismiss="modal" style="font-size:32px;">Eine Schublade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/lab_drawer2.jpg" alt="Eine Schublade" />
+  <br /><br />Ganz schön viele Kleinteile!
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-drawer3" tabindex="-1" role="dialog" aria-labelledby="modal-drawer3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-drawer3Label" data-dismiss="modal" style="font-size:32px;">Eine Schublade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/lab_drawer3.jpg" alt="Eine Schublade" />
+  <br /><br />Bei diesem Chaos muss man ja ewig suchen bis man etwas findet.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-labbook" tabindex="-1" role="dialog" aria-labelledby="modal-labbookLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-labbookLabel" data-dismiss="modal" style="font-size:32px;">Ein Laborbuch</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  Lilos Laborbuch! Eine Seite ist markiert, vielleicht steht da etwas Nützliches drin.
+  <img src="assets/img/lab_labbook.jpg" alt="Ein Laborbuch" /> <br />
+  <br />
+  Ihr öffnet das Laborbuch und findest folgende Notiz...
+  <img src="assets/img/lab_labbook_open.jpg" alt="Ein Laborbuch" /><br />
+  <br />
+  Und da ist eine weitere Seite...
+  <img src="assets/img/lab_labbook_open2.jpg" alt="Ein Laborbuch" />
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-snackbox" tabindex="-1" role="dialog" aria-labelledby="modal-snackboxLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-snackboxLabel" data-dismiss="modal" style="font-size:32px;">Die Snackbox</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/lab_snackbox.jpg" alt="Die Snackbox" />
+  <br /><br />Die Snackbox... Es ist sogar noch etwas drin! Aber da hatte jemand noch nicht mal genug Zeit, um seinen Keks zu essen.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-oven" tabindex="-1" role="dialog" aria-labelledby="modal-ovenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-ovenLabel" data-dismiss="modal" style="font-size:32px;">Der Ofen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/lab_oven.jpg" alt="Der Ofen" />
+  <br /><br />Das ist der Ofen, der die Atome verdampft...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-bottle" tabindex="-1" role="dialog" aria-labelledby="modal-bottleLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="modal-bottleLabel" data-dismiss="modal" style="font-size:32px;">Eine Flasche</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/lab_bottle.jpg" alt="Eine Flasche" />
+  <br /><br />Schon wieder alle Wasserflaschen leer. Ist aber auch
+  kein Wunder, so warm wie es hier im Labor ist!
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jslib/jquery.imagemapster.min.js"></script>
+    <script type="text/javascript" src="jslib/scripts.js"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.inventory-popover').popover({
+                container: 'body',
+                html: true,
+                trigger: 'focus',
+                content:'Diese Dinge habt Ihr bereits im Büro gesammelt. Ihr wird sie noch brauchen.'
+            })
+        })
+    </script>
+    
+    <script type="text/javascript">
+      $(function () {
+          $('.experiment-popover').popover({
+              container: 'body',
+              html: true,
+              trigger: 'focus',
+              title: "",
+              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+          })
+      })
+    </script>
+    
+    
+<script type="text/javascript">
+  GameState.restore();
+  GameInterface.setup(GameState);
+  $(document).ready(function () {
+    'use strict';
+
+    var img = $('#lab');
+    var modal_areas = ['table', 'drawer1', 'drawer2', 'drawer3', 'labbook', 'snackbox', 'oven', 'bottle'];
+
+    img.mapster({
+      stroke: true,
+      mapKey: "data-lesson",
+      clickNavigate: true,
+      render_highlight: {
+        strokeWidth: 4,
+        fillColor: '555555',
+        stroke: true
+      },
+      render_select: {
+        fillColor: 'd6d6d6',
+        fillOpacity: 0,
+        stroke: true,
+        strokeType : "dashed",
+        strokeWidth: 1,
+        strokeOpacity: 0.8
+      },
+      areas: [
+        { key: 'electricity', staticState: true },
+        { key: 'optics', staticState: true },
+        { key: 'magnet', staticState: true },
+        { key: 'vacuum', staticState: true },
+        { key: 'table', staticState: true },
+        { key: 'drawer1', staticState: true },
+        { key: 'drawer2', staticState: true },
+        { key: 'drawer3', staticState: true },
+        { key: 'labbook', staticState: true },
+        { key: 'snackbox', staticState: true },
+        { key: 'oven', staticState: true },
+        { key: 'bottle', staticState: true }
+      ],
+      onClick: function (e) {
+        if (modal_areas.includes(e.key)) {
+          $('#modal-' + e.key).modal({ show: true });
+          return false;
+        }
+        return true;
+      }
+    });
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="robots" content="noindex">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        map.lessons area {
+            background: black;
+
+        }
+    </style>
+
+    <title>Lab Escape</title>
+</head>
+
+<body>
+
+
+
+  <div id="navbar">
+    <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
+    <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
+      
+  Labor: Vakuum
+
+    </span>
+
+    
+    <div class="title clock w3-panel w3-leftbar w3-border-red w3-pale-red px-auto" style="float:right;
+    "><span class="clock" id="clock"></span></div>
+    
+    
+    <a button class="experiments mx-3 py-2 btn experiment-popover"
+    style="float:right; font-size: 20px;" tabindex="0" data-placement="left" data-toggle="popover">
+        <div class="w3-quarter magnet"> <img src="assets/img/icon_magnet.png" style="width:45px"> </div>
+        <div class="w3-quarter electricity"> <img src="assets/img/icon_electricity.png" style="width:45px"> </div>
+        <div class="w3-quarter vacuum"> <img src="assets/img/icon_vacuum.png" style="width:45px"> </div>
+        <div class="w3-quarter optics"> <img src="assets/img/icon_optics.png" style="width:45px"> </div>
+    </a>
+    
+
+  </div>
+
+  <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 20;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+    <div class="container-fluid"  style="">
+
+        <div class="w3-row  w3-stretch">
+
+          
+            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+
+                <div class="mb-3">
+                  <a button tabindex="0"  class="title w3-panel w3-topbar
+                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                      data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
+                </div>
+                
+
+                
+
+                
+                <div class="" style="float:right;">
+                    <div class="torch"> <img src="assets/img/inventory/torch.png"> </div>
+                    <div class="scissors"> <img src="assets/img/inventory/scissors.png"> </div>
+                    <div class="tape"> <img src="assets/img/inventory/tape.png"> </div>
+                    <div class="magnet"> <img src="assets/img/inventory/magnet.png"> </div>
+                    <div class="box_magnet"> <img src="assets/img/inventory/box_magnet.png"> </div>
+                    <div class="box_electricity"> <img src="assets/img/inventory/box_electricity.png"> </div>
+                    <div class="cd"> <img src="assets/img/inventory/cd.png"> </div>
+                    <div class="apple"> <img src="assets/img/inventory/apple.png"> </div>
+                </div>
+                
+            
+
+                
+                <div class="mt-2">
+                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
+                        starten</a>
+                </div>
+                
+            </div>
+
+            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+                <div style="">
+                  
+                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                    
+Das hier ist die Vakuumpumpe.<br />
+Sie steuert die Menge an Luft-Teilchen im Experiment. Aber welches Level an Luft-Teilchen wollen wir
+eigentlich?
+
+                    <br/>
+                  
+                  </section>
+                </div>
+
+                <div class="w3-panel">
+                  
+                  
+                    
+<section class="mb-3">
+  <img src="assets/img/lab_vacuum_off.jpg" class="lab_experiment_off" alt="Die Pumpe">
+  <img src="assets/img/lab_vacuum_on.jpg" class="lab_experiment_on" alt="Die Pumpe">
+</section>
+
+                </div>
+
+                <div class="w3-panel" style="max-width: 1320px; ">
+
+                  
+
+                  <section >
+                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                  
+<section>
+  <p>
+    Verstellt den Regler, um zu sehen, wie viele/wenige Luft-Teilchen (gelb) die gefangenen Atome (rot) beeinflussen.
+    Was denkt Ihr welche Situation für das Experiment hilfreich ist? Stellt den Druck entsprechend mit dem Regler ein.
+      </p>
+</section>
+<section class="pressure_dial_group">
+  <form>
+    <div class="form-group">
+      <label for="solution">Stelle den Druck ein</label>
+      <input type="range" class="form-control-range pressure-dial" id="solution" min="1" max="29" step="1">
+    </div>
+    Druck:
+    <div class="form-group">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped pressure-bar" role="progressbar" style="width: 20%"
+          aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+  </form>
+</section>
+<section>
+  <div class="mt-4 mb-4">
+    <img src="assets/img/vacuum_pressure_1.gif" class="pressure pressure-1" style="display: none; width:auto;">
+    <img src="assets/img/vacuum_pres_bar_1.png" class="pressure pressure-1"
+      style="display: none; width: 200px; margin-left:30px;">
+    <img src="assets/img/vacuum_pressure_2.gif" class="pressure pressure-2" style="display: none; width:auto;">
+    <img src="assets/img/vacuum_pres_bar_2.png" class="pressure pressure-2"
+      style="display: none; width: 200px; margin-left:30px;">
+    <img src="assets/img/vacuum_pressure_3.gif" class="pressure pressure-3" style="display: none; width:auto;">
+    <img src="assets/img/vacuum_pres_bar_3.png" class="pressure pressure-3"
+      style="display: none; width: 200px; margin-left:30px;">
+  </div>
+</section>
+<section class="wrong alert alert-danger" role="alert">
+  <span>Die Atome stoßen noch zu oft mit den Luft-Teilchen im Experiment und bleiben nicht dort, wo sie bleiben
+    sollen.</span>
+</section>
+<section class="correct alert alert-success" role="alert">
+  <span>Sehr gut! Ihr habt das Vakuum im Experiment wieder hergestellt und nahezu alle Luft-Teilchen entfernt. Die Atome
+    sind im Experiment jetzt ganz ungestört.<br />
+    Jetzt aber weiter, Ihr habt noch viel zu tun!</span>
+</section>
+<section>
+  <div class="mt-4">
+    <a href="#" class="title w3-btn w3-gray w3-round-large " id="send_solution" style="display:none;">Lösung prüfen</a>
+  </div>
+</section>
+
+                  </section>
+
+
+                  
+
+                  
+                  
+                  <a button  class="title w3-btn w3-gray w3-round-large " href="lab.html" style="float: right; margin-top: 5%;">
+                  Zurück ins Labor
+                  
+                  
+                  </a>
+                  </section>
+                  
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jslib/jquery.imagemapster.min.js"></script>
+    <script type="text/javascript" src="jslib/scripts.js"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.inventory-popover').popover({
+                container: 'body',
+                html: true,
+                trigger: 'focus',
+                content:'Diese Dinge habt Ihr bereits im Büro gesammelt. Ihr wird sie noch brauchen.'
+            })
+        })
+    </script>
+    
+    <script type="text/javascript">
+      $(function () {
+          $('.experiment-popover').popover({
+              container: 'body',
+              html: true,
+              trigger: 'focus',
+              title: "",
+              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+          })
+      })
+    </script>
+    
+    
+<script type="text/javascript">
+  GameState.restore();
+  GameInterface.setup(GameState);
+  $(document).ready(function () {
+    'use strict';
+    $('.pressure-dial').change(function (event) {
+      $('.pressure-bar').width((5 + 3 * $('.pressure-dial').val()).toString() + '%');
+      $('img.pressure').hide();
+      $('img.pressure-' + (1 + Math.floor($('.pressure-dial').val() / 10)).toString()).show();
+      $('#send_solution').show();
+    });
+    setup_experiment_interface("vacuum", 1);
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="robots" content="noindex">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        map.lessons area {
+            background: black;
+
+        }
+    </style>
+
+    <title>Lab Escape</title>
+</head>
+
+<body>
+
+
+
+  <div id="navbar">
+    <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
+    <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
+      
+  Labor: Elektrizität
+
+    </span>
+
+    
+    <div class="title clock w3-panel w3-leftbar w3-border-red w3-pale-red px-auto" style="float:right;
+    "><span class="clock" id="clock"></span></div>
+    
+    
+    <a button class="experiments mx-3 py-2 btn experiment-popover"
+    style="float:right; font-size: 20px;" tabindex="0" data-placement="left" data-toggle="popover">
+        <div class="w3-quarter magnet"> <img src="assets/img/icon_magnet.png" style="width:45px"> </div>
+        <div class="w3-quarter electricity"> <img src="assets/img/icon_electricity.png" style="width:45px"> </div>
+        <div class="w3-quarter vacuum"> <img src="assets/img/icon_vacuum.png" style="width:45px"> </div>
+        <div class="w3-quarter optics"> <img src="assets/img/icon_optics.png" style="width:45px"> </div>
+    </a>
+    
+
+  </div>
+
+  <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 20;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+    <div class="container-fluid"  style="">
+
+        <div class="w3-row  w3-stretch">
+
+          
+            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+
+                <div class="mb-3">
+                  <a button tabindex="0"  class="title w3-panel w3-topbar
+                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                      data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
+                </div>
+                
+
+                
+
+                
+                <div class="" style="float:right;">
+                    <div class="torch"> <img src="assets/img/inventory/torch.png"> </div>
+                    <div class="scissors"> <img src="assets/img/inventory/scissors.png"> </div>
+                    <div class="tape"> <img src="assets/img/inventory/tape.png"> </div>
+                    <div class="magnet"> <img src="assets/img/inventory/magnet.png"> </div>
+                    <div class="box_magnet"> <img src="assets/img/inventory/box_magnet.png"> </div>
+                    <div class="box_electricity"> <img src="assets/img/inventory/box_electricity.png"> </div>
+                    <div class="cd"> <img src="assets/img/inventory/cd.png"> </div>
+                    <div class="apple"> <img src="assets/img/inventory/apple.png"> </div>
+                </div>
+                
+            
+
+                
+                <div class="mt-2">
+                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
+                        starten</a>
+                </div>
+                
+            </div>
+
+            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+                <div style="">
+                  
+                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                    
+So viele Kabel und Knöpfe! <br /><br />
+Bei der ganzen Elektronik im Experiment kann bestimmt viel kaputt gehen, wenn die
+Stromversorgung aussetzt. Es ist also wichtig, den Strom wieder zum Laufen zu bringen.
+
+                    <br/>
+                  
+                  </section>
+                </div>
+
+                <div class="w3-panel">
+                  
+                  
+                    
+<section class="mb-3">
+  <img src="assets/img/lab_electronics_off.jpg" class="lab_experiment_off" alt="Viele elektrische Geräte">
+  <img src="assets/img/lab_electronics_on.jpg" class="lab_experiment_on" alt="Viele elektrische Geräte">
+</section>
+
+                </div>
+
+                <div class="w3-panel" style="max-width: 1320px; ">
+
+                  
+
+                  <section >
+                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                  
+<section>
+  <p>
+    Ihr habt hoffentlich die Box mit dem richtigen Symbol aus dem Büro mitgenommen. <br/>
+    Vielleicht könnt Ihr die Teile darin ja gebrauchen. Schaut am besten mal nach und verbindet alle gefundenen Hinweise
+    zum Thema Elektrizität. <br />
+    Ob Euch am Ende das richtige Licht aufgeht?<br />
+    Gebt die Lösung hier ein und notiert sie Euch auch für später, denn Ihr werdet sie noch brauchen.
+  </p>
+</section>
+<section class="wrong alert alert-danger" role="alert">
+  <span>Leider ist die Lösungsfarbe nicht korrekt...</span>
+</section>
+<section class="correct alert alert-success" role="alert">
+  <span>Der Strom läuft wieder! Ihr könnt sehen, dass alle Anschlüsse wieder funktionieren und die Lampen leuchten. <br/><br/>
+    Schreibt Euch die Lösung am besten auf und dann schnell weiter, es gibt noch viel zu tun!</span>
+</section>
+<section class="form-inline">
+  <div class="form-group mr-3"><input type="text" class="form-control" id="solution" /></div>
+  <a href="#" class="title w3-btn w3-gray w3-round-large " id="send_solution">Lösung prüfen</a>
+</section>
+
+                  </section>
+
+
+                  
+
+                  
+                  
+                  <a button  class="title w3-btn w3-gray w3-round-large " href="lab.html" style="float: right; margin-top: 5%;">
+                  Zurück ins Labor
+                  
+                  
+                  </a>
+                  </section>
+                  
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jslib/jquery.imagemapster.min.js"></script>
+    <script type="text/javascript" src="jslib/scripts.js"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.inventory-popover').popover({
+                container: 'body',
+                html: true,
+                trigger: 'focus',
+                content:'Diese Dinge habt Ihr bereits im Büro gesammelt. Ihr wird sie noch brauchen.'
+            })
+        })
+    </script>
+    
+    <script type="text/javascript">
+      $(function () {
+          $('.experiment-popover').popover({
+              container: 'body',
+              html: true,
+              trigger: 'focus',
+              title: "",
+              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+          })
+      })
+    </script>
+    
+    
+<script type="text/javascript">
+  GameState.restore();
+  GameInterface.setup(GameState);
+  $(document).ready(function () {
+    'use strict';
+    setup_experiment_interface("electricity", "rot");
+  });
+</script>
+
+</body>
+
+</html>

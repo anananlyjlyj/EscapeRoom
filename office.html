@@ -1,0 +1,660 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="robots" content="noindex">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        map.lessons area {
+            background: black;
+
+        }
+    </style>
+
+    <title>Lab Escape</title>
+</head>
+
+<body>
+
+
+
+  <div id="navbar">
+    <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
+    <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
+      
+  Lilos Büro
+
+    </span>
+
+    
+    <div class="title clock w3-panel w3-leftbar w3-border-red w3-pale-red px-auto" style="float:right;
+    "><span class="clock" id="clock"></span></div>
+    
+    
+    <a button class="experiments mx-3 py-2 btn experiment-popover"
+    style="float:right; font-size: 20px;" tabindex="0" data-placement="left" data-toggle="popover">
+        <div class="w3-quarter magnet"> <img src="assets/img/icon_magnet.png" style="width:45px"> </div>
+        <div class="w3-quarter electricity"> <img src="assets/img/icon_electricity.png" style="width:45px"> </div>
+        <div class="w3-quarter vacuum"> <img src="assets/img/icon_vacuum.png" style="width:45px"> </div>
+        <div class="w3-quarter optics"> <img src="assets/img/icon_optics.png" style="width:45px"> </div>
+    </a>
+    
+
+  </div>
+
+  <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 20;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+    <div class="container-fluid"  style="">
+
+        <div class="w3-row  w3-stretch">
+
+          
+            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+
+                <div class="mb-3">
+                  <a button tabindex="0"  class="title w3-panel w3-topbar
+                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                      data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
+                </div>
+                
+                <div class="inventory">
+                    <div class="torch"> <img src="assets/img/inventory/torch.png"> </div>
+                    <div class="scissors"> <img src="assets/img/inventory/scissors.png"> </div>
+                    <div class="tape"> <img src="assets/img/inventory/tape.png"> </div>
+                    <div class="magnet"> <img src="assets/img/inventory/magnet.png"> </div>
+                    <div class="box_magnet"> <img src="assets/img/inventory/box_magnet.png"> </div>
+                    <div class="box_electricity"> <img src="assets/img/inventory/box_electricity.png"> </div>
+                    <div class="cd"> <img src="assets/img/inventory/cd.png"> </div>
+                    <div class="apple"> <img src="assets/img/inventory/apple.png"> </div>
+                </div>
+                
+
+                
+
+                
+            
+
+                
+                <div class="mt-2">
+                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
+                        starten</a>
+                </div>
+                
+            </div>
+
+            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+                <div style="">
+                  
+                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                    
+  Ihr seid allein in Lilos Büro.
+
+                    <br/>
+                  
+                  </section>
+                </div>
+
+                <div class="w3-panel">
+                  
+                  
+                    
+<section>
+  <img src="assets/img/office.jpg" alt="usemap" usemap="#lessons" id="lab">
+  <map name="lessons" class="lessons">
+    <area data-lesson="shelf_lt" title="Ein Stück Regal" alt="Ein Stück Regal" href=""
+      coords="800,66,800,119,877,119,877,66" shape="poly">
+    <area data-lesson="shelf_rt" title="Ein Stück Regal" alt="Ein Stück Regal" href=""
+      coords="887,66,884,121,991,125,993,65" shape="poly">
+    <area data-lesson="shelf_lm" title="Ein Stück Regal" alt="Ein Stück Regal" href=""
+      coords="801,126,800,175,871,178,877,125" shape="poly">
+    <area data-lesson="shelf_lb" title="Ein Stück Regal" alt="Ein Stück Regal" href=""
+      coords="800,184,872,186,873,237,798,230" shape="poly">
+    <area data-lesson="shelf_rb" title="Ein Stück Regal" alt="Ein Stück Regal" href=""
+      coords="885,131,880,233,992,240,993,134" shape="poly">
+    <area data-lesson="computer_1" title="Ein Computer" alt="Ein Computer" href=""
+      coords="316,280,327,422,515,369,504,251" shape="poly">
+    <area data-lesson="computer_2" title="Ein Computer" alt="Ein Computer" href="office_computer.html"
+      coords="672,224,676,320,700,357,735,359,774,313,721,213" shape="poly">
+    <area data-lesson="container" title="container" href="office_container.html"
+      coords="887,316,931,323,931,421,871,452,813,434,809,406" shape="poly">
+    <area data-lesson="vacuum" alt="Eine Notiz" title="Eine Notiz" href="" coords="594,410,610,457,725,436,704,395"
+      shape="poly">
+    <area data-lesson="pen" alt="Ein Stiftehalter" title="Ein Stiftehalter" href=""
+      coords="124,432,122,523,138,544,153,543,176,521,171,451,155,428" shape="poly">
+    <area data-lesson="coffee" alt="Eine Kaffeetasse" title="Eine Kaffeetasse" href=""
+      coords="598,301,601,358,613,367,654,357,659,327,639,327,630,298" shape="poly">
+    <area data-lesson="whiteboard" title="Ein Whiteboard" alt="Ein Whiteboard" href="office_whiteboard.html"
+      coords="243,16,240,221,527,203,529,44" shape="poly">
+    <area data-lesson="calendar" title="Ein Plakat" alt="Ein Plakat" href="" coords="543,77,588,84,582,167,545,164"
+      shape="poly">
+    <area data-lesson="labdoor" class="labdoor" title="Eine Tür" alt="Eine Tür" href=""
+      coords="673,36,785,26,773,265,750,263,723,211,670,218" shape="poly">
+    <area data-lesson="apples" title="Etwas zu essen" alt="Etwas zu essen" href=""
+      coords="821,288,840,290,852,302,835,311,815,312,801,307,794,298,808,290" shape="poly">
+    <area data-lesson="mess" title="Chaos" alt="Chaos" href="" coords="550,288,596,282,633,302,620,308,550,310"
+      shape="poly">
+    <area data-lesson="telephone" title="Ein Telefon" alt="Ein Telefon" href=""
+      coords="183,340,189,372,244,368,244,347,255,345,252,337" shape="poly">
+    <area data-lesson="cabinet" title="Ein Schrank" alt="Ein Schrank" href="office_cabinet.html"
+      coords="998,62,990,353,1083,357,1090,64" shape="poly">
+    <area data-lesson="magazines" title="Magazine" alt="Magazine" href="" coords="639,289,648,275,583,269,581,280"
+      shape="poly">
+    <area data-lesson="bin" title="Ein Mülleimer" alt="Ein Mülleimer" href=""
+      coords="1037,402,1041,488,1054,500,1073,505,1096,503,1115,492,1125,402,1117,393,1096,387,1081,385,1070,383,1059,382,1045,389"
+      shape="poly">
+  </map>
+</section>
+
+                </div>
+
+                <div class="w3-panel" style="max-width: 1320px; ">
+
+                  
+
+                  <section >
+                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                  
+Vielleicht findet Ihr hier Hinweise und Hilfsmittel, um das Experiment wieder zum Laufen zu bringen?
+<br />
+Klicke auf Objekte, um sie zu untersuchen.
+
+                  </section>
+
+
+                  
+                  
+                  
+
+                  
+                  </a>
+                  </section>
+                  
+                </div>
+            </main>
+        </div>
+    </div>
+    
+<div class="modal fade" id="computer_1" tabindex="-1" role="dialog" aria-labelledby="computer_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="computer_1Label" data-dismiss="modal" style="font-size:32px;">Ein Computer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_code.jpg" alt="Ein Computer" />
+  <br /><br />Hier steht ein Computer. Der Code auf dem Display ist euch weitgehend unverständlich und sieht so aus, als ob er Lilo
+  schon eine Menge Zeit gekostet hätte.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="pen" tabindex="-1" role="dialog" aria-labelledby="penLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="penLabel" data-dismiss="modal" style="font-size:32px;">Ein Stiftehalter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  Ein Stift ist bestimmt hilfreich, um den einen oder anderen Hinweis aufzuschreiben.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="coffee" tabindex="-1" role="dialog" aria-labelledby="coffeeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="coffeeLabel" data-dismiss="modal" style="font-size:32px;">Eine Kaffeekanne und -tasse</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  Hier könnte auch mal wieder jemand spülen!
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mess" tabindex="-1" role="dialog" aria-labelledby="messLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="messLabel" data-dismiss="modal" style="font-size:32px;">Ein Kabelgewirr</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_cables.jpg" alt="Ein Kabelgewirr" />
+  <br /><br />Was ein Chaos! Bin ich froh, dass ich diesen Kabelsalat nicht aufräumen muss...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="telephone" tabindex="-1" role="dialog" aria-labelledby="telephoneLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="telephoneLabel" data-dismiss="modal" style="font-size:32px;">Ein Telefon</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_telephone.jpg" alt="Ein Telefon" />
+  <br /><br />Ein Telefon. Es sieht schon etwas angestaubt aus, als hätte es schon länger niemand mehr benutzt...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="vacuum" tabindex="-1" role="dialog" aria-labelledby="vacuumLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="vacuumLabel" data-dismiss="modal" style="font-size:32px;">Eine Notiz</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <p>
+    Hmm...Lilo scheint sich zuletzt mit dem Thema Vakuum beschäftigt zu haben. Ob das vielleicht etwas mit dem
+    Experiment zu tun hat?
+  </p>
+  <img src="assets/img/office_vacuum.png" alt="Eine Notiz" />
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="apples" tabindex="-1" role="dialog" aria-labelledby="applesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="applesLabel" data-dismiss="modal" style="font-size:32px;">Ein Apfel</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_apple.jpg" alt="Ein Apfel" />
+  <br /><br />Ein Apfel - Proviant ist immer gut, also lege Euch auch einen Apfel bereit.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-khaki w3-round-large  find-apple" data-dismiss="modal">Einen Apfel ins Inventar legen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="shelf_lt" tabindex="-1" role="dialog" aria-labelledby="shelf_ltLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="shelf_ltLabel" data-dismiss="modal" style="font-size:32px;">Ein Regalfach</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_shelf_lt.jpg" alt="Ein Regalfach" />
+  <br /><br />Das Buch Modern Quantum Mechanik von Suzuki ist ein gute Lehrbuch für Physikstudierende im  3. Semester.
+  Vielleicht könnte Lilo euch das Buch leihen wenn Ihr sie fragt...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="shelf_lm" tabindex="-1" role="dialog" aria-labelledby="shelf_lmLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="shelf_lmLabel" data-dismiss="modal" style="font-size:32px;">Ein Regalfach</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_shelf_lm.jpg" alt="Ein Regalfach" />
+  <br /><br /> Hier gibt es nichts wirklich Interessantes...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="shelf_lb" tabindex="-1" role="dialog" aria-labelledby="shelf_lbLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="shelf_lbLabel" data-dismiss="modal" style="font-size:32px;">Ein Regalfach</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_shelf_lb.jpg" alt="Ein Regalfach" />
+  <br /><br /> Am besten durchwühlt Ihr die Ordner und Papier nicht...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="shelf_rt" tabindex="-1" role="dialog" aria-labelledby="shelf_rtLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="shelf_rtLabel" data-dismiss="modal" style="font-size:32px;">Ein Regalfach</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_shelf_rt.jpg" alt="Ein Regalfach" />
+  <br /><br /> Oh, eine Taschenlampe! Die könnte im Labor bestimmt nützlich sein, vor allem wenn der Strom ausgefallen ist...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-khaki w3-round-large  find-torch" data-dismiss="modal">Eine Taschenlampe ins Inventar legen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="shelf_rb" tabindex="-1" role="dialog" aria-labelledby="shelf_rbLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="shelf_rbLabel" data-dismiss="modal" style="font-size:32px;">Ein Regalfach</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_shelf_rb.jpg" alt="Ein Regalfach" />
+  <br /><br /> Kaffee brauchen viele Physiker jeden Tag, um effizient zu arbeiten. Leider findet Ihr aber keine saubere Tasse zum Trinken.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="calendar" tabindex="-1" role="dialog" aria-labelledby="calendarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="calendarLabel" data-dismiss="modal" style="font-size:32px;">Ein Kalender</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_calendar.jpg" alt="Ein Kalender" />
+  <br /><br /> Ein Kalender. 2019? Wirklich? Den scheint ja wirklich niemand zu benutzen...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="magazines" tabindex="-1" role="dialog" aria-labelledby="magazinesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="magazinesLabel" data-dismiss="modal" style="font-size:32px;">Magazine</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_magazines.jpg" alt="Diverse Magazine" />
+  <br /><br /> Das sind ja total spannende Magazine, aber leider ist jetzt keine Zeit, um darin zu schmökern.
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="bin" tabindex="-1" role="dialog" aria-labelledby="binLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="binLabel" data-dismiss="modal" style="font-size:32px;">Ein Mülleimer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  <img src="assets/img/office_bin.jpg" style="width:600px;" alt="Ein Mülleimer" />
+  <br /><br /> In dem Mülleimer steht nichts wirklich Interessantes...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+</div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="warning-inventory" tabindex="-1" role="dialog" aria-labelledby="warning-inventoryLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg image-responsive" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title" id="warning-inventoryLabel" data-dismiss="modal" style="font-size:32px;">Die Labortür</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+<div class="modal-body">
+  Seid Ihr sicher, dass Ihr schon alles gefunden habt, was Ihr im Labor benötigen wird? Schaue lieber noch einmal genau
+  nach...
+</div>
+<div class="modal-footer">
+  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Zurück ins Büro</button>
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jslib/jquery.imagemapster.min.js"></script>
+    <script type="text/javascript" src="jslib/scripts.js"></script>
+    
+    <script type="text/javascript">
+      $(function () {
+          $('.experiment-popover').popover({
+              container: 'body',
+              html: true,
+              trigger: 'focus',
+              title: "",
+              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+          })
+      })
+    </script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.inventory-popover').popover({
+                container: 'body',
+                html: true,
+                trigger: 'focus',
+                content:'Auf der linker Seite sammelt Ihr Dinge, die Ihr noch brauchen wird.'
+            })
+        })
+    </script>
+    
+    
+<script type="text/javascript">
+
+  GameState.restore();
+  GameInterface.setup(GameState);
+  $(document).ready(function () {
+    'use strict';
+
+    var img = $('#lab');
+    var modal_areas = ['computer_1', 'mess', 'telephone', 'calendar', 'magazines', 'bin',
+      'shelf_lt', 'shelf_lm', 'shelf_lb', 'shelf_rt', 'shelf_rb', 'apples', 'vacuum', 'pen', 'coffee'];
+
+    img.mapster({
+      stroke: true,
+      mapKey: "data-lesson",
+      clickNavigate: true,
+      enableAutoResizeSupport: true,
+      render_highlight: {
+        strokeWidth: 4,
+        fillColor: '555555',
+        stroke: true
+      },
+      render_select: {
+        fillColor: 'd6d6d6',
+        fillOpacity: 0,
+        stroke: true,
+        strokeType : "dashed",
+        strokeWidth: 1,
+        strokeOpacity: 0.8
+      },
+      areas: [
+        { key: 'shelf_lt', staticState: true },
+        { key: 'shelf_lm', staticState: true },
+        { key: 'shelf_lb', staticState: true },
+        { key: 'shelf_rt', staticState: true },
+        { key: 'shelf_rb', staticState: true },
+        { key: 'labdoor', staticState: true },
+        { key: 'computer_1', staticState: true },
+        { key: 'computer_2', staticState: true },
+        { key: 'container', staticState: true },
+        { key: 'whiteboard', staticState: true },
+        { key: 'pen', staticState: true },
+        { key: 'coffee', staticState: true },
+        { key: 'vacuum', staticState: true },
+        { key: 'calendar', staticState: true },
+        { key: 'cabinet', staticState: true },
+        { key: 'apples', staticState: true },
+        { key: 'mess', staticState: true },
+        { key: 'telephone', staticState: true },
+        { key: 'bin', staticState: true },
+        { key: 'magazines', staticState: true }
+      ],
+      onClick: function (e) {
+        if (modal_areas.includes(e.key)) {
+          $('#' + e.key).modal({ show: true });
+          return false;
+        }
+        return true;
+      }
+    });
+    $('.labdoor').click(function (event) {
+      if (GameState.all_inventory_found()) {
+        window.location.href = "office_labdoor.html";
+        return true;
+      }
+      $('#warning-inventory').modal({ show: true });
+      return false;
+    });
+    $('.find-apple').click(function () {
+      GameState.find('apple');
+      GameInterface.updateInventory(GameState);
+      return true;
+    });
+    $('.find-torch').click(function () {
+      GameState.find('torch');
+      GameInterface.updateInventory(GameState);
+      return true;
+    });
+  });
+</script>
+
+</body>
+
+</html>
