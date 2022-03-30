@@ -27,7 +27,7 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
@@ -39,6 +39,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -63,55 +64,57 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
 
-                
-                <div class="mt-2">
-                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
-                        starten</a>
-                </div>
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
 <canvas id="confetti" width="1" height="1"></canvas>
 
                     
-<div class="mx-auto" style="width: 1300px;">
-    <iframe id = "player" src="https://www.youtube.com/embed/q7mumvUpCMs?enablejsapi=1" width="1280" height="720" frameborder="0"
+<div class="mx-auto" style="width: 80%;">
+    <iframe id = "player" src="https://www.youtube.com/embed/q7mumvUpCMs?enablejsapi=1" width="1024" height="576" frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture" allowfullscreen ></iframe>
 </div>
-<section class="mx-auto text-left outro w3-panel" style="display: none; max-width: 1300px; margin-left:25%; width:50%; ">
+<section class="mx-auto text-left outro w3-panel" style="display: none;  margin-left:25%; width:50%; ">
   <p>
     Super, Ihr habt den Detektor wieder zum Laufen gebracht!<br />
-    Vielen Dank, dass Ihr bei unserem Escape-Lab mitgemacht hast. <br />
-    Wir hoffen, es hat euch Spaß gemacht!
+    Vielen Dank, dass Ihr bei unserem Escape-Lab mitgemacht habt. <br />
+    Wir hoffen, es hat Euch Spaß gemacht!
   </p>
   <p>
     verbrauchte Zeit: <span id="time_taken"></span>
   </p>
   <a href="javascript:window.open('','_self').close();"
-  class="w3-btn w3-gray w3-round-large" style="float:right"> Spiel schließen </a>
+  class="w3-btn w3-blue w3-round-large" style="float:right"> Spiel schließen </a>
 </section>
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -127,9 +130,9 @@
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>

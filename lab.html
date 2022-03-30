@@ -27,7 +27,7 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
@@ -51,6 +51,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -75,14 +76,12 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
-            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+            <div class="w3-col pr-3" style=" width:120px;">
 
-                <div class="mb-3">
+                <div class="mb-3 mx-auto">
                   <a button tabindex="0"  class="title w3-panel w3-topbar
-                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                  w3-border-blue btn w3-sand   inventory-popover  "
                       data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
                 </div>
                 
@@ -103,18 +102,13 @@
                 
             
 
-                
-                <div class="mt-2">
-                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
-                        starten</a>
-                </div>
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
-                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                  <section class="w3-panel w3-leftbar w3-border-blue" style="padding: 20px; margin-left: 16px; width:70%; ">
                     
 Lilo scheint noch nicht zurück zu sein, das heißt Ihr müsst hier schon einmal ohne sie weitermachen.
 <br />
@@ -126,7 +120,7 @@ Lilo scheint noch nicht zurück zu sein, das heißt Ihr müsst hier schon einmal
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
                   
                     
@@ -161,12 +155,13 @@ Lilo scheint noch nicht zurück zu sein, das heißt Ihr müsst hier schon einmal
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
 
                   <section >
-                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                    <section class="w3-panel w3-border-blue w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; margin-top: 0%;">
                   
 Schaut Euch ein wenig um, sammelt weitere Hinweise und versucht Euch zu erinnern, was Lilo über das Experiment erzählt hat, bevor der
 Strom ausgefallen ist. <br />
@@ -174,6 +169,13 @@ Bekommt Ihr noch zusammen, welche Komponenten für das Experiment wichtig sind, 
 läuft?
 
                   </section>
+
+                  
+                  <div class="mt-2">
+                      <a href="start_experiment.html" class="title w3-btn w3-blue w3-round-large to_detector" style="display:none;">Experiment
+                          starten</a>
+                  </div>
+                  
 
 
                   
@@ -185,9 +187,17 @@ läuft?
                   </section>
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
 <div class="modal fade" id="modal-table" tabindex="-1" role="dialog" aria-labelledby="modal-tableLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg image-responsive" role="document">
@@ -204,7 +214,7 @@ läuft?
   <br /><br />Sieht nach ganz schön viel Arbeit aus, das alles aufzubauen!
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -222,10 +232,10 @@ läuft?
             
 <div class="modal-body">
   <img src="assets/img/lab_drawer1.jpg" alt="Eine Schublade" />
-  <br /><br />Was ist das denn? Ich wüsste nicht, wofür ich den Kram gebrauchen könnte.
+  <br /><br />Was ist das denn? Der Kram ist bestimmt nicht wichtig.
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -246,7 +256,7 @@ läuft?
   <br /><br />Ganz schön viele Kleinteile!
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -267,7 +277,7 @@ läuft?
   <br /><br />Bei diesem Chaos muss man ja ewig suchen bis man etwas findet.
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -287,14 +297,14 @@ läuft?
   Lilos Laborbuch! Eine Seite ist markiert, vielleicht steht da etwas Nützliches drin.
   <img src="assets/img/lab_labbook.jpg" alt="Ein Laborbuch" /> <br />
   <br />
-  Ihr öffnet das Laborbuch und findest folgende Notiz...
+  Ihr öffnet das Laborbuch und findet folgende Notiz...
   <img src="assets/img/lab_labbook_open.jpg" alt="Ein Laborbuch" /><br />
   <br />
-  Und da ist eine weitere Seite...
+  Und da ist eine weitere Seite:
   <img src="assets/img/lab_labbook_open2.jpg" alt="Ein Laborbuch" />
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -315,7 +325,7 @@ läuft?
   <br /><br />Die Snackbox... Es ist sogar noch etwas drin! Aber da hatte jemand noch nicht mal genug Zeit, um seinen Keks zu essen.
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -333,10 +343,10 @@ läuft?
             
 <div class="modal-body">
   <img src="assets/img/lab_oven.jpg" alt="Der Ofen" />
-  <br /><br />Das ist der Ofen, der die Atome verdampft...
+  <br /><br />Das ist der Ofen, der die Atome verdampft.
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -358,7 +368,7 @@ läuft?
   kein Wunder, so warm wie es hier im Labor ist!
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -379,7 +389,7 @@ läuft?
             $('.inventory-popover').popover({
                 container: 'body',
                 html: true,
-                trigger: 'focus',
+                trigger: 'hover',
                 content:'Diese Dinge habt Ihr bereits im Büro gesammelt. Ihr wird sie noch brauchen.'
             })
         })
@@ -390,9 +400,9 @@ läuft?
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>
@@ -409,20 +419,20 @@ läuft?
 
     img.mapster({
       stroke: true,
+      strokeColor: "fc0000",
+      strokeOpacity: 0.4,
       mapKey: "data-lesson",
       clickNavigate: true,
+      enableAutoResizeSupport: true,
       render_highlight: {
         strokeWidth: 4,
-        fillColor: '555555',
+        fillOpacity: 0,
         stroke: true
       },
       render_select: {
-        fillColor: 'd6d6d6',
         fillOpacity: 0,
         stroke: true,
-        strokeType : "dashed",
-        strokeWidth: 1,
-        strokeOpacity: 0.8
+        strokeWidth: 1
       },
       areas: [
         { key: 'electricity', staticState: true },

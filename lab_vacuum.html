@@ -27,7 +27,7 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
@@ -51,6 +51,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -75,14 +76,12 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
-            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+            <div class="w3-col pr-3" style=" width:120px;">
 
-                <div class="mb-3">
+                <div class="mb-3 mx-auto">
                   <a button tabindex="0"  class="title w3-panel w3-topbar
-                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                  w3-border-blue btn w3-sand   inventory-popover  "
                       data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
                 </div>
                 
@@ -103,21 +102,16 @@
                 
             
 
-                
-                <div class="mt-2">
-                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
-                        starten</a>
-                </div>
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
-                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                  <section class="w3-panel w3-leftbar w3-border-blue" style="padding: 20px; margin-left: 16px; width:70%; ">
                     
 Das hier ist die Vakuumpumpe.<br />
-Sie steuert die Menge an Luft-Teilchen im Experiment. Aber welches Level an Luft-Teilchen wollen wir
+Sie steuert die Menge an Luft-Teilchen im Experiment. Aber welches Level an Luft-Teilchen brauchen wir
 eigentlich?
 
                     <br/>
@@ -125,7 +119,7 @@ eigentlich?
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
                   
                     
@@ -136,12 +130,13 @@ eigentlich?
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
 
                   <section >
-                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                    <section class="w3-panel w3-border-blue w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; margin-top: 0%;">
                   
 <section>
   <p>
@@ -166,6 +161,7 @@ eigentlich?
 </section>
 <section>
   <div class="mt-4 mb-4">
+    <img src="assets/img/vacuum_pressure.png" class="pressure" style="display: none; width:auto;">
     <img src="assets/img/vacuum_pressure_1.gif" class="pressure pressure-1" style="display: none; width:auto;">
     <img src="assets/img/vacuum_pres_bar_1.png" class="pressure pressure-1"
       style="display: none; width: 200px; margin-left:30px;">
@@ -188,28 +184,43 @@ eigentlich?
 </section>
 <section>
   <div class="mt-4">
-    <a href="#" class="title w3-btn w3-gray w3-round-large " id="send_solution" style="display:none;">Lösung prüfen</a>
+    <a href="#" class="title w3-btn w3-blue w3-round-large " id="send_solution" style="display:none;">Lösung prüfen</a>
   </div>
 </section>
 
                   </section>
 
+                  
+                  <div class="mt-2">
+                      <a href="start_experiment.html" class="title w3-btn w3-blue w3-round-large to_detector" style="display:none;">Experiment
+                          starten</a>
+                  </div>
+                  
+
 
                   
 
                   
                   
-                  <a button  class="title w3-btn w3-gray w3-round-large " href="lab.html" style="float: right; margin-top: 5%;">
-                  Zurück ins Labor
+                  <a button  class="title w3-btn w3-blue w3-round-large " href="lab.html" style="float: right; margin-top: 0%;">
+                  Weiter im Labor
                   
                   
                   </a>
                   </section>
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -225,7 +236,7 @@ eigentlich?
             $('.inventory-popover').popover({
                 container: 'body',
                 html: true,
-                trigger: 'focus',
+                trigger: 'hover',
                 content:'Diese Dinge habt Ihr bereits im Büro gesammelt. Ihr wird sie noch brauchen.'
             })
         })
@@ -236,9 +247,9 @@ eigentlich?
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>

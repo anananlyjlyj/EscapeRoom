@@ -27,12 +27,12 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
       
-  Lilos Büro: das Computer
+  Lilos Büro: Ein Arbeitsplatz
 
     </span>
 
@@ -51,6 +51,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -75,14 +76,12 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
-            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+            <div class="w3-col pr-3" style=" width:120px;">
 
-                <div class="mb-3">
+                <div class="mb-3 mx-auto">
                   <a button tabindex="0"  class="title w3-panel w3-topbar
-                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                  w3-border-blue btn w3-sand   inventory-popover  "
                       data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
                 </div>
                 
@@ -103,18 +102,13 @@
                 
             
 
-                
-                <div class="mt-2">
-                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
-                        starten</a>
-                </div>
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
-                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                  <section class="w3-panel w3-leftbar w3-border-blue" style="padding: 20px; margin-left: 16px; width:70%; ">
                     
 Ein sehr ordentlicher Arbeitsplatz!
 
@@ -123,12 +117,12 @@ Ein sehr ordentlicher Arbeitsplatz!
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
                   
                     
 <section>
-  <img src="assets/img/office_computer.jpg" alt="usemap" usemap="#computer_map" id="computer">
+  <img src="assets/img/office_computer.jpg" style = "max-width: 720px;" alt="usemap" usemap="#computer_map" id="computer">
   <map name="computer_map">
     <area alt="Eine CD" title="Eine CD" data-key="cd" href="" coords="174,1344,657,1351,661,1701,3,1699,3,1618"
       shape="poly">
@@ -143,24 +137,32 @@ Ein sehr ordentlicher Arbeitsplatz!
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
 
                   <section >
-                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                    <section class="w3-panel w3-border-blue w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; margin-top: 0%;">
                   
 Vielleicht liegt hier noch etwas Nützliches rum.
 <br/>
-Klicke auf Objekte, um sie zu untersuchen.
+Klickt auf Objekte, um sie zu untersuchen.
 
                   </section>
 
+                  
+                  <div class="mt-2">
+                      <a href="start_experiment.html" class="title w3-btn w3-blue w3-round-large to_detector" style="display:none;">Experiment
+                          starten</a>
+                  </div>
+                  
+
 
                   
                   
-                  <a button  class="title w3-btn w3-gray w3-round-large " href="office.html" style="float: right; margin-top: 5%;">
-                  Zurück ins Büro
+                  <a button  class="title w3-btn w3-blue w3-round-large " href="office.html" style="float: right; margin-top: 0%;">
+                  Weiter im Büro
                   
                   
 
@@ -169,9 +171,17 @@ Klicke auf Objekte, um sie zu untersuchen.
                   </section>
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
 <div class="modal fade" id="modal-cd" tabindex="-1" role="dialog" aria-labelledby="modal-cdLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg image-responsive" role="document">
@@ -184,10 +194,10 @@ Klicke auf Objekte, um sie zu untersuchen.
             </div>
             
 <div class="modal-body">
-  Eine CD - die könnte nützlich sein! Vielleicht nimmt Ihr besser einmal mit...
+  Eine CD - die könnte nützlich sein! Vielleicht nehmt Ihr sie besser mit ins Labor...
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-khaki w3-round-large  find-cd" data-dismiss="modal">CD ins Inventar legen</button>
+  <button type="button" class="title w3-btn w3-amber w3-round-large  find-cd" data-dismiss="modal">CD ins Inventar legen</button>
 </div>
 
         </div>
@@ -207,7 +217,7 @@ Klicke auf Objekte, um sie zu untersuchen.
   Dieser Computer ist leider kaputt. Der Bildschirm flackert immer...
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Weiter</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -217,7 +227,7 @@ Klicke auf Objekte, um sie zu untersuchen.
     <div class="modal-dialog modal-lg image-responsive" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title title" id="modal-pen_holderLabel" data-dismiss="modal" style="font-size:32px;">Ein Stifthalter</h5>
+                <h5 class="modal-title title" id="modal-pen_holderLabel" data-dismiss="modal" style="font-size:32px;">Ein Stiftehalter</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -227,7 +237,7 @@ Klicke auf Objekte, um sie zu untersuchen.
   Ein Stift ist bestimmt hilfreich, um den einen oder anderen Hinweis aufzuschreiben.
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Weiter</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -247,7 +257,7 @@ Klicke auf Objekte, um sie zu untersuchen.
   Die könnte auch mal wieder gegossen werden.
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Weiter</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -267,9 +277,9 @@ Klicke auf Objekte, um sie zu untersuchen.
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>
@@ -279,8 +289,8 @@ Klicke auf Objekte, um sie zu untersuchen.
             $('.inventory-popover').popover({
                 container: 'body',
                 html: true,
-                trigger: 'focus',
-                content:'Auf der linker Seite sammelt Ihr Dinge, die Ihr noch brauchen wird.'
+                trigger: 'hover',
+                content:'Auf der linken Seite sammelt Ihr Dinge, die Ihr noch brauchen werdet.'
             })
         })
     </script>

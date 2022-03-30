@@ -27,7 +27,7 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
@@ -51,6 +51,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -75,14 +76,12 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
-            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+            <div class="w3-col pr-3" style=" width:120px;">
 
-                <div class="mb-3">
+                <div class="mb-3 mx-auto">
                   <a button tabindex="0"  class="title w3-panel w3-topbar
-                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                  w3-border-blue btn w3-sand   inventory-popover  "
                       data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
                 </div>
                 
@@ -103,18 +102,13 @@
                 
             
 
-                
-                <div class="mt-2">
-                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
-                        starten</a>
-                </div>
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
-                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                  <section class="w3-panel w3-leftbar w3-border-blue" style="padding: 20px; margin-left: 16px; width:70%; ">
                     
 So viele Kabel und Knöpfe! <br /><br />
 Bei der ganzen Elektronik im Experiment kann bestimmt viel kaputt gehen, wenn die
@@ -125,7 +119,7 @@ Stromversorgung aussetzt. Es ist also wichtig, den Strom wieder zum Laufen zu br
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
                   
                     
@@ -136,12 +130,13 @@ Stromversorgung aussetzt. Es ist also wichtig, den Strom wieder zum Laufen zu br
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
 
                   <section >
-                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                    <section class="w3-panel w3-border-blue w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; margin-top: 0%;">
                   
 <section>
   <p>
@@ -149,7 +144,7 @@ Stromversorgung aussetzt. Es ist also wichtig, den Strom wieder zum Laufen zu br
     Vielleicht könnt Ihr die Teile darin ja gebrauchen. Schaut am besten mal nach und verbindet alle gefundenen Hinweise
     zum Thema Elektrizität. <br />
     Ob Euch am Ende das richtige Licht aufgeht?<br />
-    Gebt die Lösung hier ein und notiert sie Euch auch für später, denn Ihr werdet sie noch brauchen.
+    Gebt die Lösung hier ein und <b>notiert sie Euch auch für später, denn Ihr werdet sie noch brauchen</b>.
   </p>
 </section>
 <section class="wrong alert alert-danger" role="alert">
@@ -157,31 +152,46 @@ Stromversorgung aussetzt. Es ist also wichtig, den Strom wieder zum Laufen zu br
 </section>
 <section class="correct alert alert-success" role="alert">
   <span>Der Strom läuft wieder! Ihr könnt sehen, dass alle Anschlüsse wieder funktionieren und die Lampen leuchten. <br/><br/>
-    Schreibt Euch die Lösung am besten auf und dann schnell weiter, es gibt noch viel zu tun!</span>
+    <b>Schreibt Euch die Lösung am besten auf</b> und dann schnell weiter, es gibt noch viel zu tun!</span>
 </section>
 <section class="form-inline">
   <div class="form-group mr-3"><input type="text" class="form-control" id="solution" /></div>
-  <a href="#" class="title w3-btn w3-gray w3-round-large " id="send_solution">Lösung prüfen</a>
+  <a href="#" class="title w3-btn w3-blue w3-round-large " id="send_solution">Lösung prüfen</a>
 </section>
 
                   </section>
 
+                  
+                  <div class="mt-2">
+                      <a href="start_experiment.html" class="title w3-btn w3-blue w3-round-large to_detector" style="display:none;">Experiment
+                          starten</a>
+                  </div>
+                  
+
 
                   
 
                   
                   
-                  <a button  class="title w3-btn w3-gray w3-round-large " href="lab.html" style="float: right; margin-top: 5%;">
-                  Zurück ins Labor
+                  <a button  class="title w3-btn w3-blue w3-round-large " href="lab.html" style="float: right; margin-top: 0%;">
+                  Weiter im Labor
                   
                   
                   </a>
                   </section>
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -197,7 +207,7 @@ Stromversorgung aussetzt. Es ist also wichtig, den Strom wieder zum Laufen zu br
             $('.inventory-popover').popover({
                 container: 'body',
                 html: true,
-                trigger: 'focus',
+                trigger: 'hover',
                 content:'Diese Dinge habt Ihr bereits im Büro gesammelt. Ihr wird sie noch brauchen.'
             })
         })
@@ -208,9 +218,9 @@ Stromversorgung aussetzt. Es ist also wichtig, den Strom wieder zum Laufen zu br
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>

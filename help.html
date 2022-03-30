@@ -27,7 +27,7 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
@@ -42,6 +42,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -66,46 +67,48 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
 
-                
-                <div class="mt-2">
-                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
-                        starten</a>
-                </div>
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
                   
                     
 <section class="mt-4 text-center">
-  <a href="office.html" class="title w3-btn w3-gray w3-round-large  mx-auto mt-3">Büro</a><br />
-  <a href="lab.html" class="title w3-btn w3-gray w3-round-large  mx-auto mt-3">Labor</a><br />
-  <a href="detector.html" class="title w3-btn w3-gray w3-round-large  mx-auto mt-3">Detektor</a><br />
-  <a href="#" class="title w3-btn w3-gray w3-round-large  fill_inventory mx-auto mt-3">Inventar füllen</a><br />
-  <a href="#" class="title w3-btn w3-gray w3-round-large  plus5 mx-auto mt-3">+ 5 Minuten</a><br />
-  <a href="#" class="title w3-btn w3-gray w3-round-large  plus10 mx-auto mt-3">+ 10 Minuten</a><br />
+  <a href="office.html" class="title w3-btn w3-blue w3-round-large  mx-auto mt-3">Büro</a><br />
+  <a href="lab.html" class="title w3-btn w3-blue w3-round-large  mx-auto mt-3">Labor</a><br />
+  <a href="detector.html" class="title w3-btn w3-blue w3-round-large  mx-auto mt-3">Detektor</a><br />
+  <a href="#" class="title w3-btn w3-blue w3-round-large  fill_inventory mx-auto mt-3">Inventar füllen</a><br />
+  <a href="#" class="title w3-btn w3-blue w3-round-large  plus5 mx-auto mt-3">+ 5 Minuten</a><br />
+  <a href="#" class="title w3-btn w3-blue w3-round-large  plus10 mx-auto mt-3">+ 10 Minuten</a><br />
 </section>
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -121,9 +124,9 @@
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>

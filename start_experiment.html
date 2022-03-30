@@ -27,7 +27,7 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
@@ -42,6 +42,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -66,50 +67,58 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
 
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
                   
                     
 <section>
-  <div class="mx-auto" style="width:1300px;">
-    <iframe id = "player" src="https://www.youtube.com/embed/6zgWZb4_7Sg?enablejsapi=1" width="1280" height="720" frameborder="0"
+  <div class="mx-auto" style="width:80%;">
+    <iframe id = "player" src="https://www.youtube.com/embed/6zgWZb4_7Sg?enablejsapi=1"
+    width="1024" height="576" frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
   </div>
 </section>
-<section class="intro mx-auto text-left" style="display: none;width: 1300px;">
+<section class="mx-auto text-left intro w3-panel" style="display: none; margin-left:25%; width:50%; ">
   <p>
-    <br /><br />
+
     Super, ihr habt es geschafft! Im Video könnt Ihr die eingefangenen Atome als kleine leuchtende Wolke erkennen.<br />
     Um alle Daten für ihre Doktorarbeit zu sammeln, muss Lilo die gefangenen Teilchen jetzt untersuchen. Dazu verwendet
     sie einen neuartigen Teilchendetektor. <br />
     Könnt Ihr Lilo helfen, die Teilchen mit diesem Detektor zu messen, und dafür
     sorgen, dass sie Ihren Doktortitel erhält?
   </p>
-  <div class="mt-4"><a href="detector.html" class="w3-btn w3-gray w3-round-large" style="float:right">Zum Detektor</a></div>
+  <div class="mt-4"><a href="detector.html" class="title w3-btn w3-blue w3-round-large" style="margin-left:25%; width:50%;">Zum Detektor</a></div>
 </section>
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -125,9 +134,9 @@
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>

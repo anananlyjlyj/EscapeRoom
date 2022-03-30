@@ -27,12 +27,12 @@
 <body>
 
 
-
+<div class="nav-wrapper" style="height:80px">
   <div id="navbar">
     <div><img src="assets/img/logo.png" class="py-2  px-4" style="width:140px; float:left;" alt="Lab Escape" /></div>
     <span class="title py-2 px-4" href="#" style="font-size: 32px; float:left;">
       
-  Lilos Büro: ein Schrank
+  Lilos Büro: Ein Schrank
 
     </span>
 
@@ -51,6 +51,7 @@
     
 
   </div>
+    </div>
 
   <script type="text/javascript">
     // When the user scrolls the page, execute myFunction
@@ -75,14 +76,12 @@
 
     <div class="container-fluid"  style="">
 
-        <div class="w3-row  w3-stretch">
-
           
-            <div class="sidebar w3-col pr-3 w3-panel" style = "width:130px; ">
+            <div class="w3-col pr-3" style=" width:120px;">
 
-                <div class="mb-3">
+                <div class="mb-3 mx-auto">
                   <a button tabindex="0"  class="title w3-panel w3-topbar
-                  w3-border-gray btn w3-sand display: inline-block  inventory-popover  "
+                  w3-border-blue btn w3-sand   inventory-popover  "
                       data-placement="left" data-toggle="popover" style="font-size: 18px;">Inventar</a>
                 </div>
                 
@@ -103,18 +102,13 @@
                 
             
 
-                
-                <div class="mt-2">
-                    <a href="start_experiment.html" class="title w3-btn w3-gray w3-round-large to_detector" style="display:none;">Experiment
-                        starten</a>
-                </div>
-                
             </div>
 
-            <main role="main" class="w3-rest" style="background:#DCD0C0;">
+
+            <main role="main" class="w3-rest container-fluid" style="background:#fce3b3; max-width: 1320px; min-width:60%; ">
                 <div style="">
                   
-                  <section class="w3-panel w3-leftbar w3-border-gray" style="padding: 20px; margin-left: 16px; width:70%; ">
+                  <section class="w3-panel w3-leftbar w3-border-blue" style="padding: 20px; margin-left: 16px; width:70%; ">
                     
 Hier steht ein Schrank. Darin befindet sich eine Menge Zeug...
 
@@ -123,12 +117,12 @@ Hier steht ein Schrank. Darin befindet sich eine Menge Zeug...
                   </section>
                 </div>
 
-                <div class="w3-panel">
+                <div class="w3-panel mx-auto" style="">
                   
                   
                     
 <section>
-  <img src="assets/img/office_cabinet.jpg" alt="usemap" usemap="#lessons" id="cabinet">
+  <img src="assets/img/office_cabinet.jpg" style = "max-width: 1080px;"  alt="usemap" usemap="#lessons" id="cabinet">
   <map name="lessons" class="lessons">
     <area data-lesson="cube" alt="Ein Würfel" title="Ein Würfel" href=""
       coords="497,421,485,452,490,534,575,535,577,420" shape="poly">
@@ -139,24 +133,32 @@ Hier steht ein Schrank. Darin befindet sich eine Menge Zeug...
 
                 </div>
 
-                <div class="w3-panel" style="max-width: 1320px; ">
+
+                <div class="w3-panel" style="">
 
                   
 
                   <section >
-                    <section class="w3-panel w3-border-gray w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; ">
+                    <section class="w3-panel w3-border-blue w3-round-large w3-sand" style="border-spacing: 10px; width:70%; float:left; padding-left: 20px; padding-right: 20px; margin-top: 0%;">
                   
 Vielleicht könnte Einiges davon später im Labor nützlich sein?
 <br />
-Klicke auf Objekte, um sie zu untersuchen.
+Klickt auf Objekte, um sie zu untersuchen.
 
                   </section>
 
+                  
+                  <div class="mt-2">
+                      <a href="start_experiment.html" class="title w3-btn w3-blue w3-round-large to_detector" style="display:none;">Experiment
+                          starten</a>
+                  </div>
+                  
+
 
                   
                   
-                  <a button  class="title w3-btn w3-gray w3-round-large " href="office.html" style="float: right; margin-top: 5%;">
-                  Zurück ins Büro
+                  <a button  class="title w3-btn w3-blue w3-round-large " href="office.html" style="float: right; margin-top: 0%;">
+                  Weiter im Büro
                   
                   
 
@@ -165,9 +167,17 @@ Klicke auf Objekte, um sie zu untersuchen.
                   </section>
                   
                 </div>
+
+
+
             </main>
+
+
+
+
+
         </div>
-    </div>
+
     
 <div class="modal fade" id="box-el" tabindex="-1" role="dialog" aria-labelledby="box-elLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg image-responsive" role="document">
@@ -181,10 +191,10 @@ Klicke auf Objekte, um sie zu untersuchen.
             
 <div class="modal-body">
   Hier hat sich das gelieferte Paket versteckt! <br />
-  Vergewissere Dich, dass Ihr die Box mit dem Stecker-Symbol bereitgelegt hast. Ihr wird sie brauchen.
+  Vergewissert Euch, dass Ihr die Box mit dem Stecker-Symbol bereitgelegt habt. Ihr werdet sie brauchen.
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-khaki w3-round-large  find-box-el" data-dismiss="modal">Die Elektro-Box ins Inventar legen</button>
+  <button type="button" class="title w3-btn w3-amber w3-round-large  find-box-el" data-dismiss="modal">Die Elektro-Box ins Inventar legen</button>
 </div>
 
         </div>
@@ -204,7 +214,7 @@ Klicke auf Objekte, um sie zu untersuchen.
   Leider ist gerade keine Zeit zum Spielen...
 </div>
 <div class="modal-footer">
-  <button type="button" class="title w3-btn w3-gray w3-round-large " data-dismiss="modal">Schließen</button>
+  <button type="button" class="title w3-btn w3-blue w3-round-large " data-dismiss="modal">Schließen</button>
 </div>
 
         </div>
@@ -224,9 +234,9 @@ Klicke auf Objekte, um sie zu untersuchen.
           $('.experiment-popover').popover({
               container: 'body',
               html: true,
-              trigger: 'focus',
+              trigger: 'hover',
               title: "",
-              content:'Richtet Ihr alle wichtige Komponenten ein, um das Experiment wieder zum Laufen zu bringen. '
+              content:'Repariert alle wichtigen Komponenten, um das Experiment wieder zum Laufen zu bringen. '
           })
       })
     </script>
@@ -236,8 +246,8 @@ Klicke auf Objekte, um sie zu untersuchen.
             $('.inventory-popover').popover({
                 container: 'body',
                 html: true,
-                trigger: 'focus',
-                content:'Auf der linker Seite sammelt Ihr Dinge, die Ihr noch brauchen wird.'
+                trigger: 'hover',
+                content:'Auf der linken Seite sammelt Ihr Dinge, die Ihr noch brauchen werdet.'
             })
         })
     </script>
@@ -252,20 +262,20 @@ Klicke auf Objekte, um sie zu untersuchen.
     var img = $('#cabinet');
     img.mapster({
       stroke: true,
+      strokeColor: "4a4a4a",
+      strokeOpacity: 0.8,
       mapKey: "data-lesson",
       clickNavigate: true,
+      enableAutoResizeSupport: true,
       render_highlight: {
         strokeWidth: 4,
-        fillColor: '555555',
+        fillOpacity: 0,
         stroke: true
       },
       render_select: {
-        fillColor: 'd6d6d6',
         fillOpacity: 0,
-        stroke: true,
-        strokeType : "dashed",
-        strokeWidth: 1,
-        strokeOpacity: 0.8
+        stroke: false,
+        strokeWidth: 1
       },
       onClick: function (e) {
         if (e.key == 'box-el') {
